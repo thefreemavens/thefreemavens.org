@@ -12,12 +12,9 @@
     @apply disabled:cursor-not-allowed;
   }
 
-  mark { background: var(--color-primary-300);}
-  .dark {
-      mark { 
-        background: var(--color-indigo-900);
-        color: var(--text-color-default);
-      }
+  mark { 
+    background: var(--color-indigo-900);
+    color: var(--text-color-default);
   }
 }
 
@@ -55,33 +52,6 @@
 }
 
 :root {
-  --ui-container: var(--container-8xl);
-  /* --ui-header-height: 3.5rem;   */
-
-  --ui-border-default: var(--color-earth-700);
-
-  --ui-primary: var(--ui-color-primary-600);
-  --ui-secondary: var(--color-tropical-mint);
-  /* --ui-success: var(--ui-color-success-500); */
-  /* --ui-info: var(--ui-color-info-500); */
-  /* --ui-warning: var(--ui-color-warning-500); */
-  /* --ui-error: var(--ui-color-error-500); */
-
-  --ui-bg: var(--ui-color-neutral-100);
-  --ui-bg-muted: var(--ui-color-neutral-100);
-  /* --ui-bg-elevated: var(--ui-color-neutral-100); */
-  /* --ui-bg-accented: var(--ui-color-neutral-200); */
-  /* --ui-bg-inverted: var(--ui-color-neutral-900); */
-
-  /* --ui-text-dimmed: var(--ui-color-neutral-400); */
-  /* --ui-text-muted: var(--ui-color-neutral-500); */
-  /* --ui-text-toned: var(--ui-color-neutral-600); */
-  /* --ui-text: var(--ui-color-neutral-800); */
-  /* --ui-text-highlighted: var(--ui-color-neutral-900); */
-  /* --ui-text-inverted: white; */
-}
-
-.dark {
   --ui-border: var(--color-neutral-700);
   --border-DEFAULT: var(--color-neutral-700);
   --ui-primary: var(--ui-color-primary-500);
@@ -101,7 +71,7 @@
   /* --ui-text-dimmed: var(--ui-color-neutral-500); */
   /* --ui-text-muted: var(--ui-color-neutral-400); */
   /* --ui-text-toned: var(--ui-color-neutral-300); */
-  /* --ui-text: var(--ui-color-neutral-200); */
+  --ui-text: var(--ui-color-neutral-200);
   /* --ui-text-highlighted: white; */
   /* --ui-text-inverted: var(--ui-color-neutral-900); */
 }
