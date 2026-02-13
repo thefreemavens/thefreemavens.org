@@ -41,8 +41,8 @@
         </UMarquee>
       </div>
     </div>
-    <div class="opacity-0 group-hover:opacity-100 font-sans text-xs -mt-1.5 text-neutral-600 group-hover:text-neutral-300 p-4 transition-all duration-1500 group-hover:duration-300 cursor-pointer text-center">
-      The <span class="--border-b border-primary">Open</span> Doctrine
+    <div class="opacity-0 group-hover:opacity-100 font-sans text-xs -mt-1.5 group-hover:text-neutral-400 p-4 transition-all duration-1500 group-hover:duration-300 cursor-pointer text-center max-w-48 text-neutral-500">
+      Your Master Key to Sovereignty
     </div>
   </NuxtLink>
 </template>

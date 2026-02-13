@@ -82,14 +82,17 @@ const logoGradient = computed(() => {
         </div>
 
         <!-- TITLE -->
+        <span class="text-xs mt-8 text-neutral-600">
+          Introducing
+        </span>
         <h1
           class="
-            mt-8 md:mt-10
+            mt-1
             font-sans
             text-center
             text-shadow-lg/20
             text-shadow-black
-            text-lg md:text-xl
+            text-md md:text-lg
             max-w-52 md:max-w-60
             text-neutral-300
             tracking-tight
@@ -97,7 +100,7 @@ const logoGradient = computed(() => {
           "
           :style="{ opacity }"
         >
-          Discover your true power and learn how to use it
+          The <span class="font-bold">Open Doctrine</span>
         </h1>
 
         <!-- CTA -->
