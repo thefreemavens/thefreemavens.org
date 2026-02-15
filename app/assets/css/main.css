@@ -20,7 +20,7 @@
 
 @theme static {
   --font-sans: 'Geist', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-mono: 'Google Sans Code', monospace;
 
   --container-8xl: 96rem;
 
