@@ -19,7 +19,7 @@
           </h1>
         </div>
 
-        <div class="flex gap-3 w-md flex-wrap justify-center --border-t border-default/50 pt-12">
+        <div class="flex gap-3 w-full max-w-md flex-wrap justify-center pt-12 px-4">
           <UButton
             v-for="(faqCat, index) in faqCats"
             :key="index"
@@ -42,13 +42,13 @@
         </div>
 
         <!-- FAQ -->
-        <div class="my-12 w-full px-6 max-w-xl">
+        <div class="my-12 w-full px-8">
           <UAccordion
             :items="filteredItems"
             :unmount-on-hide="false"
             :default-value="[]"
             type="multiple"
-            class="w-full md:w-xl mx-auto text-default"
+            class="w-full max-w-xl mx-auto text-default"
             :ui="{
               trigger: 'text-sm text-default',
               body: 'text-sm text-muted'

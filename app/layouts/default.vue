@@ -1,5 +1,5 @@
 <template>
-  <div class="relative min-h-svh">
+  <div class="relative min-h-svh w-full">
     <AppHeader />
     <slot />
     <AppFooter />
