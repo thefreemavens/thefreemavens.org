@@ -6,19 +6,20 @@
       <span class="absolute flex w-48 h-36 bg-primary-300/50 left-1/2 -translate-x-1/2 blur-2xl -translate-y-25 animate-[pulse_6s_ease-in-out_infinite]" />
       <span class="absolute flex w-72 h-48 bg-neutral-600 left-1/2 -translate-x-1/2 blur-3xl -translate-y-48" />
       <div class="flex flex-col justify-center items-center py-12">
+        <AppLogo />
         <div
           class="text-center"
         >
-          <UIcon
+          <!-- <UIcon
             name="i-local-tfm"
             class="size-12 text-default"
-          />
-          <h1 class="font-medium text-lg tracking-tight mt-2 text-dimmed">
+          /> -->
+          <h1 class="font-semibold text-xl tracking-tighter mt-6 text-default pt-2 pb-6 px-3 border-b border-default border-dotted animate-[pulse_6s_ease-in-out_infinite]">
             Help & Support
           </h1>
         </div>
 
-        <div class="my-2 flex gap-3 w-md flex-wrap justify-center --border-t border-default/50 pt-20">
+        <div class="flex gap-3 w-md flex-wrap justify-center --border-t border-default/50 pt-12">
           <UButton
             v-for="(faqCat, index) in faqCats"
             :key="index"
@@ -49,7 +50,7 @@
             type="multiple"
             class="w-full md:w-xl mx-auto text-default"
             :ui="{
-              trigger: 'text-base text-default',
+              trigger: 'text-sm text-default',
               body: 'text-sm text-muted'
             }"
           >
@@ -78,7 +79,7 @@
 import type { AccordionItem } from '@nuxt/ui'
 
 // Define a type for FAQ items with category
-interface FaqItem extends AccordionItem {
+interface faqItem extends AccordionItem {
   category: string
   content: string
 }
@@ -106,7 +107,7 @@ const faqCats = [
 ] as const
 
 // All FAQ items with their categories - explicitly typed
-const allItems: FaqItem[] = [
+const items: faqItem[] = [
   {
     label: 'Who are The Freemavens?',
     content: '**The Freemavens** are a voluntary, non-religious, non-political, fraternal and benevolent collective of creators, not workers. We are individuals dedicated to the study, application, and propagation of Natural Law as the foundation for personal sovereignty and a free society.',
@@ -234,11 +235,11 @@ const allItems: FaqItem[] = [
 const activeCategory = ref<string | null>(faqCats[0].label)
 
 // Computed filtered items with explicit return type
-const filteredItems = computed((): FaqItem[] => {
+const filteredItems = computed((): faqItem[] => {
   if (!activeCategory.value) {
-    return allItems
+    return items
   }
-  return allItems.filter(item => item.category === activeCategory.value)
+  return items.filter(item => item.category === activeCategory.value)
 })
 
 // Methods

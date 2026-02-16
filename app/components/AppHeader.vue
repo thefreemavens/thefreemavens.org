@@ -1,16 +1,20 @@
 <template>
   <header>
     <UButton
-      :label="route.name === 'index' ? 'HELP' : '/'"
+      to="/"
+      label="/"
       variant="outline"
       color="neutral"
       size="xs"
-      class="fixed top-3 right-3 z-50 font-mono --uppercase scale-90"
-      :to="route.name === 'index' ? '/help' : '/'"
+      class="fixed top-3 left-3 z-50 font-mono --uppercase scale-90"
+    />
+    <UButton
+      to="/help"
+      label="help"
+      variant="outline"
+      color="neutral"
+      size="xs"
+      class="fixed top-3 right-3 z-50 font-mono uppercase scale-90"
     />
   </header>
 </template>
-
-<script setup lang="ts">
-const route = useRoute()
-</script>
