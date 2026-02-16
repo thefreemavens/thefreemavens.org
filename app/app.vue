@@ -47,7 +47,7 @@ useSeoMeta({
 
 <template>
   <UApp>
-    <NuxtLoadingIndicator color="#6342FF" />
+    <NuxtLoadingIndicator color="#fbfaff" />
 
     <NuxtLayout>
       <NuxtPage />

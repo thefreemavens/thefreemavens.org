@@ -77,7 +77,7 @@
   /* --ui-text-inverted: var(--ui-color-neutral-900); */
 }
 
-/* @utility grid-bg-md {
+@utility grid-bg-md {
 background:
   linear-gradient(to right,
   transparent               0%,
@@ -103,7 +103,7 @@ background:
   transparent               calc(50% + 360.1px),
   transparent               100%
   );
-} */
+}
 
 /* @utility grid-bg {
 background:
