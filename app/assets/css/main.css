@@ -133,6 +133,13 @@ background:
   );
 } */
 
+  a {
+    color: var(--color-earth-300);
+    &:hover {
+      color: var(--color-earth-50);
+      border-color: var(--color-earth-300);
+    }
+  }
 
 /* 
 https://coolors.co/08090a-1c1c1f-232326-28282c-010102-282828-23252a-34343a-3e3e44

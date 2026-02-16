@@ -28,7 +28,12 @@ export default defineNuxtConfig({
     }]
   },
   
-  modules: ['@nuxt/eslint', '@nuxt/ui', '@vueuse/nuxt'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/ui',
+    '@vueuse/nuxt',
+    '@nuxtjs/mdc'
+  ],
 
   nitro: {
     preset: 'static',
