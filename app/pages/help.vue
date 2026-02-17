@@ -14,7 +14,7 @@
             name="i-local-tfm"
             class="size-12 text-default"
           /> -->
-          <h1 class="font-semibold text-xl tracking-tighter mt-6 text-default pt-2 pb-6 px-3 border-b border-default border-dotted animate-[pulse_6s_ease-in-out_infinite]">
+          <h1 class="font-semibold text-xl tracking-tighter mt-6 --text-default pt-2 pb-6 px-3 border-b border-default border-dotted animate-[pulse_6s_ease-in-out_infinite] bg-linear-to-b from-neutral-700 to-neutral-50 text-transparent bg-clip-text">
             Help & Support
           </h1>
         </div>
